@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
@@ -81,5 +82,47 @@
             </form>
         </div>
     </section>
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div><img src="img/carousel1.jpg" alt="carousel1"></div>
+                <div><img src="img/carousel2.jpg" alt="carousel2"></div>
+                <div><img src="img/carousel3.jpg" alt="carousel3"></div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <h2 class="section-header">Каталог пульсометров</h2>
+            <button class="button catalog__menu-button catalog__menu-button_chosen"><span>для фитнеса</span></button>
+            <button class="button catalog__menu-button">для бега</button>
+            <button class="button catalog__menu-button">для триатлона</button>
+            <div class="catalog__wrapper">
+                <div class="catalog__element">
+                    <img src="img/pulsometr.jpg" alt="" class="catalog__image">
+                    <h3 class="catalog__pulse-name">Пульсометр Polar FT1</h3>
+                    <p class="catalog__short-description">Для первых шагов в тренировках, основанных на сердечном ритме</p>
+                    <a href="#" class="catalog__link-learn-more">подробнее</a>
+                    <div class="catalog__line"></div>
+                    <p class="catalog__price_crossed">4 750 руб.</p>
+                    <p class="catalog__price">4 500 руб.</p>
+                    <button class="catalog__button">купить</button>
+                    <div class="catalog__long-description">
+                        <ul>
+                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        </ul>
+                        <a href="#" class="catalog__link-back"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

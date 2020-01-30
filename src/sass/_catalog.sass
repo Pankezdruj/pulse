@@ -1,0 +1,43 @@
+.catalog
+    text-align: center
+    &__menu-button
+        width: 220px
+        height: 50px
+        color: #6b6b6b
+        font-size: 18px
+        font-weight: 500
+        background-color: rgba(0,0,0,0)
+        border-radius: 0
+        position: relative
+        top: 34px
+        &:nth-child(3)
+            margin: 0 10px 0 10px
+        &:before
+            border: 2px solid #d0d0d0
+            content: ''
+            display: block
+            width: 220px
+            height: 50px
+            position: relative
+            top: 35px
+            z-index: -1
+            background: #ffffff
+            transform: skew(45deg)
+        &_chosen
+            color: #fff
+            &:before
+                border: none
+                background-color: #c70101
+    &__element
+        width: 300px
+        height: 440px
+        border: 2px solid #e8e8e8
+        color: #0d0d0d
+        font-weight: 700
+    &__pulse-name
+        font-size: 16px
+    &__short-description
+        font-size: 14px
+        font-weight: 300
+    &__link
+        &-learn-more
