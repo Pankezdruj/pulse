@@ -22,22 +22,89 @@
             top: 35px
             z-index: -1
             background: #ffffff
-            transform: skew(45deg)
+            transform: skew(-30deg)
         &_chosen
             color: #fff
             &:before
                 border: none
                 background-color: #c70101
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        max-width: 940px
+        margin: 80px auto 0 auto
     &__element
         width: 300px
         height: 440px
         border: 2px solid #e8e8e8
         color: #0d0d0d
         font-weight: 700
+        padding-bottom: 20px
+        margin-top: 20px
+        &-upper
+            display: none   
+    &__image
+        margin: 20px 0
     &__pulse-name
         font-size: 16px
     &__short-description
+        margin-top: 8px
         font-size: 14px
         font-weight: 300
     &__link
-        &-learn-more
+        color: #c70101
+        font-size: 14px
+        font-weight: 500
+        text-decoration: underline
+        text-transform: uppercase   
+        &:hover
+            color: #c70101
+            text-decoration: underline
+        &-back
+            position: relative
+            left: 124px
+            top: 29px
+    &__line
+        width: 260px
+        height: 1px
+        background-color: #e8e8e8
+        margin: 15px auto 15px auto
+    &__element-bottom
+        height: 67px
+        &-flex-container
+            display: flex
+            justify-content: space-around
+    &__price
+        color: #050505
+        font-size: 18px
+        font-weight: 700
+        margin: 0
+        &-wrapper
+            display: inline-block
+            text-align: left
+        &_crossed
+            color: #555555
+            font-size: 12px
+            font-weight: 300
+            text-decoration: line-through
+            margin: 0
+    &__button
+        width: 131px
+        height: 40px
+    &__long-description
+        display: none
+        height: 334px
+        text-align: left
+        margin-right: 20px
+        ul
+            font-size: 14px
+            font-weight: 300
+            list-style-type: square
+            color: red
+            li
+                margin-top: 20px
+                p
+                    color: #555555
+    &_visible
+        display: block
