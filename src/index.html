@@ -74,10 +74,10 @@
         <div class="container">
             <h2 class="section-header">Получите бесплатную консультацию по подбору пульсометра</h2>
             <p>Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</p>
-            <form action="#" class="form">
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="Ваш телефон">
-                <input type="text" placeholder="Ваш E-mail">
+            <form action="#" class="form" id="consultation-form">
+                <input name="name" type="name" placeholder="Ваше имя">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="button">заказать консультацию</button>
             </form>
         </div>
@@ -430,9 +430,9 @@
             <h2 class="overlay__header">Просто заполните форму заявки</h2>
             <h3 class="overlay__subheader">и мы перезвоним вам в течении 10 минут</h3>
             <form action="#" class="form overlay__form">
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="Ваш телефон">
-                <input type="text" placeholder="Ваш E-mail">
+                <input name="name" type="name" placeholder="Ваше имя">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="button overlay__button">заказать консультацию</button>
             </form>
         </div>
@@ -441,9 +441,9 @@
             <h2 class="overlay__header">Ваш заказ:</h2>
             <h3 class="overlay__subheader">Пульсометр Polar FT1</h3>
             <form action="#" class="form overlay__form">
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="Ваш телефон">
-                <input type="text" placeholder="Ваш E-mail">
+                <input name="name" type="name" placeholder="Ваше имя">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="button overlay__button overlay__button-buy">Купить</button>
             </form>
         </div>
@@ -456,6 +456,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
