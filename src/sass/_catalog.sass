@@ -48,8 +48,16 @@
         font-weight: 700
         padding-bottom: 20px
         margin-top: 20px
+        position: relative
+        overflow: hidden
         &-upper
-            display: none   
+            min-width: 290px
+            transition: 1s all
+            position: absolute
+            left: 100%
+            display: block
+            &_active
+                left: 0   
     &__image
         margin: 20px 0
         max-width: 100%
@@ -72,17 +80,22 @@
         &-back
             position: relative
             left: 124px
-            top: 29px
+            top: 45px
     &__line
         width: 260px
         height: 1px
         background-color: #e8e8e8
-        margin: 15px auto 15px auto
+        margin: 15px 0 15px 0
+        position: relative
+        left: 15px
     &__element-bottom
         height: 67px
+        position: absolute
+        bottom: 20px
         &-flex-container
             display: flex
-            justify-content: space-around
+            justify-content: space-between
+            margin-left: 21px
     &__price
         color: #050505
         font-size: 18px
@@ -101,10 +114,13 @@
         width: 131px
         height: 40px
     &__long-description
-        display: none
+        min-width: 290px
         height: 334px
         text-align: left
         margin-right: 20px
+        position: absolute
+        right: 100%
+        transition: 1s all
         ul
             font-size: 14px
             font-weight: 300
@@ -114,5 +130,6 @@
                 margin-top: 20px
                 p
                     color: #555555
-    &_visible
-        display: block
+        &_active
+            display: block
+            right: 0

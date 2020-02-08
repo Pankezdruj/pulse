@@ -13,25 +13,21 @@
         height: 100vh
         background-color: #000000
         opacity: 0.56
-        &_active
-            display: block
     &__element
         display: none
-        padding: 38px 0 40px 0
-        position: relative
+        padding: 38px 40px 40px 40px
+        position: absolute
+        transform: translate(-50%, -50%)
         width: 380px
-        max-height: 400px
+        min-height: 400px
         background-color: #f2f2f2
         text-align: center
         color: #0d0d0d
-        margin: 0 auto
-        &_active
-            display: block
     &__header
-        font-size: 19px
+        font-size: 18px
         font-weight: 700
     &__subheader
-        font-size: 16px
+        font-size: 15px
         font-weight: 500
         margin: 11px 0 10px 0
     &__form
@@ -62,6 +58,10 @@
             position: absolute
             background-color: #c70101
             transform: skew(-45deg)
-            border-radius: 30%    
-            
+            border-radius: 30%
+    &__error
+        color: #ff0000
+        margin: 0 auto
+input.overlay__error
+    border: 2px solid #ff0000
                             
